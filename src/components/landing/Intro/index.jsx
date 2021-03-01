@@ -4,6 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/dev.svg';
+import jho from 'assets/illustrations/2jho.png';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -14,15 +15,13 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi There!</h1>
-          <h4>I’m James and I’m a Fullstack engineer!</h4>
+          <h4>Hi , my name is</h4>
+          <h1>James Jaeho Lee.</h1>
+          <h1>Full Stack Developer</h1>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            Get In Touch
           </Button>
         </Details>
-        <Thumbnail>
-          <img src={dev} alt="image of devs" />
-        </Thumbnail>
       </IntroWrapper>
     </Wrapper>
   );
